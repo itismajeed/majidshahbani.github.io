@@ -1,0 +1,179 @@
+/* defining fonts */
+
+@font-face {
+    font-family: dejavu;
+    font-weight: normal;
+    src: url('../fonts/DejaVuSansMono.woff') format("woff");
+}
+
+@font-face {
+    font-family: dejavu-b;
+    font-weight: bold;
+    font-style: normal;
+    src: url('../fonts/DejaVuSansMono-Bold.woff') format("woff");
+}
+
+@font-face {
+    font-family: dejavu-bo;
+    font-weight: bold;
+    font-style: oblique;
+    src: url('../fonts/DejaVuSansMono-BoldOblique.woff') format("woff");
+}
+
+@font-face {
+    font-family: dejavu-no;
+    font-style: oblique;
+    font-weight: normal;
+    src: url('../fonts/DejaVuSansMono-Oblique.woff') format('woff');
+}
+
+html {
+    width: 100%;
+}
+
+main {
+    overflow: hidden;
+}
+
+body {
+    font-family: dejavu;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+header#main-header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    display: block;
+    width: 100%;
+}
+
+header#main-header nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+header#main-header nav ul li {
+    display: inline-block;
+    font-family: dejavu-no;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding: .75rem;
+    text-align: left;
+
+}
+
+header#main-header nav a {
+    color: black;
+    padding: 0;
+}
+
+
+header#main-header nav li a {
+    background-color: white;
+    color: black;
+    background: linear-gradient(to left, white 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    /* margin-left: 10px; */
+    transition: all 350ms ease;
+}
+
+header#main-header nav li:hover a {
+
+    background-position: left bottom;
+    color: white;
+    /* background-color: black; */
+}
+
+header#main-header nav a.active {
+    color: white;
+    background: black !important;
+    padding: 0;
+}
+
+.main-logo {
+    width: 25%;
+    margin-top: 10%;
+}
+
+.highlight-black {
+    background-color: black;
+    color: white;
+    display: inline;
+}
+
+.my-name {
+    font-family: dejavu-b;
+}
+
+.my-passion{
+    font-family: dejavu-no;
+}
+
+main {
+    position: relative;
+
+}
+
+.introducer-container .introducer-container {
+    position: absolute !important;
+
+}
+
+.main-logo {
+    transition: transform 1.5s ease;
+
+
+
+}
+
+.main-logo:hover {
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+/* .introducer-container h1,
+.introducer-container h3 {
+    position: absolute !important;
+    width: 260px;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    margin-left: -130px;
+    z-index: 50;
+} */
+
+
+
+
+
+/* Media */
+
+
+@media screen and (max-width: 575.98px) {
+    .main-logo {
+        width: 50%;
+    }
+
+    header#main-header nav ul li {
+
+        font-size: 0.98rem;
+
+
+    }
+
+    .my-name {
+        font-size: 1.9rem;
+    }
+
+    .my-passion {
+        font-size: 1.2rem;
+
+    }
+}
