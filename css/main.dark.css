@@ -1,0 +1,154 @@
+/* defining fonts */
+@font-face {
+  font-family: "Dejavu Sans Mono";
+  font-weight: normal;
+  src: url("../fonts/DejaVuSansMono.woff") format("woff");
+}
+@font-face {
+  font-family: "Dejavu Sans Mono Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/DejaVuSansMono-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Dejavu Sans Mono Bold Oblique";
+  font-weight: bold;
+  font-style: oblique;
+  src: url("../fonts/DejaVuSansMono-BoldOblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Dejavu Sans Mono Oblique";
+  font-style: oblique;
+  font-weight: normal;
+  src: url("../fonts/DejaVuSansMono-Oblique.woff") format("woff");
+}
+html {
+  width: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Dejavu Sans Mono";
+  background-color: #141518;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header#main-header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+}
+
+header#main-header nav ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+header#main-header nav ul li {
+  display: inline-block;
+  font-family: "Dejavu Sans Mono Bold";
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+header#main-header nav a {
+  color: #f8f8f8;
+  padding: 0;
+}
+
+header#main-header nav li a {
+  background-color: #141518;
+  color: #f8f8f8;
+  background: linear-gradient(to left, #141518 50%, #f8f8f8 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  /* margin-left: 10px; */
+  transition: all 350ms ease;
+}
+
+header#main-header nav li:hover a {
+  background-position: left bottom;
+  color: #141518;
+  /* background-color: black; */
+}
+
+header#main-header nav a.active {
+  color: #141518;
+  background: #f8f8f8 !important;
+  padding: 0;
+}
+
+.main-logo {
+  width: 250px;
+  display: inline-block;
+  margin-top: 10%;
+  height: 300px;
+  background-image: url("../img/logo-light.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.highlight-black {
+  background-color: #f8f8f8;
+  color: #141518;
+  display: inline;
+}
+
+.my-name {
+  font-family: "Dejavu Sans Mono Bold";
+  color: #f8f8f8;
+}
+
+.my-passion {
+  font-family: "Dejavu Sans Mono Oblique";
+}
+
+main {
+  position: relative;
+}
+
+.introducer-container .introducer-container {
+  position: absolute !important;
+}
+
+.rot-fore {
+  transition: transform 1.8s ease-out;
+  transform: rotate(360deg);
+}
+
+.rot-back {
+  transition: transform 1.8s ease-in;
+  transform: rotate(-360deg);
+}
+
+/* Media */
+@media screen and (max-width: 575.98px) {
+  .main-logo {
+    width: 50%;
+  }
+
+  header#main-header nav ul li {
+    font-size: 0.98rem;
+  }
+
+  .my-name {
+    font-size: 1.9rem;
+  }
+
+  .my-passion {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=main.dark.css.map */
