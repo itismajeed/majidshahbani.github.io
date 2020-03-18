@@ -18,31 +18,7 @@ $(".main-logo").mouseover(function () {
 
     }
 });
-// $(".main-logo").mouseleave(function () {
-//     var href = $("#theme-css").attr("href");
-//     if (href == darkTheme) {
-//         $("#theme-css").attr("href", lightTheme);
-//         $(".main-logo").removeClass("rot-back");
-//         $(".main-logo").removeClass("rot-fore");
-//         $(".main-logo").addClass("rot-back");
-//         setTimeout(() => {
 
-//             $(".main-logo").addClass("rot-back");
-
-//         }, 800);
-//     } else {
-//         $("#theme-css").attr("href", darkTheme);
-//         $(".main-logo").removeClass("rot-back");
-//         $(".main-logo").removeClass("rot-fore");
-//         $(".main-logo").addClass("rot-back");
-//         setTimeout(() => {
-
-//             $(".main-logo").addClass("rot-fore");
-
-//         }, 200);
-
-//     }
-// });
 
 
 function setTheme(theme="light") {
