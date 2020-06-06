@@ -132,7 +132,7 @@ main {
   transform: rotate(-360deg);
 }
 
-p {
+p, h1, h2 {
   color: #f8f8f8;
 }
 
